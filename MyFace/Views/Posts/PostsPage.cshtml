@@ -3,3 +3,10 @@
 @{
     Layout = "_Layout";
 }
+
+<ol>
+    @foreach (var post in Model.Posts)
+    {
+        <li>@post.Message</li>
+    }
+</ol>
