@@ -7,6 +7,17 @@
 <ol>
     @foreach (var post in Model.Posts)
     {
-        <li>@post.Message</li>
+        <li>
+            <p>
+                @post.Message 
+            </p>
+
+            <img src= "@post.ImageUrl"/>
+ 
+            
+        </li>
+
+
+        @* <img src= "/images/puppy.jpg"alt="Dogs"/> *@
     }
 </ol>

@@ -1,0 +1,43 @@
+
+h1 {
+    font-family: Arial;
+    font-weight: lighter;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 60px;
+    padding-right: 40px;
+  }
+
+  p {
+    font-family: Arial;
+    font-weight: lighter;
+    font-size: 20px;
+    border-top: rgb(192, 255, 252);
+    
+  }
+  header{
+      position: sticky;
+      top:0;
+      background:white;
+  }
+  .nav-bar {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+  }
+  .nav-link{
+      background: rgb(7, 162, 235);
+      padding: 27px 50px;
+      text-decoration: none;
+      color: white;
+      font-family: Arial;
+      font-size: 20px;
+      transition: all 3s ease;
+      width: 150px;
+      text-align: center;
+  }
+   .nav-link:hover{
+       background-color: black;
+       transform: scale(0.5);
+       transform: rotate(360deg);
+   }
