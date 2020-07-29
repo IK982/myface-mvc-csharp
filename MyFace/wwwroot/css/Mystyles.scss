@@ -1,0 +1,159 @@
+$fontSize: 48px;
+$font: "Open Sans";
+$background: #252A38;
+$darkerBackground: #151820;
+$defaultForeground: #DCDCDC;
+$primary: #252A38;
+$transparentOverlay: #252a3881;
+
+
+body {
+
+     background: $background;
+     margin: 0;
+
+}
+
+
+@mixin LargeFont {
+    font-size: $fontSize;
+    text-transform: uppercase;
+    font-family: "Open Sans";
+
+}
+
+header{
+
+    
+    
+    position: sticky;
+    top:0;
+    background: $darkerBackground;
+
+
+}
+
+a{
+    @include LargeFont();
+    color: white;
+}
+
+  .nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 48px;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+  }
+  .nav-link{
+    
+    text-decoration: none;
+    color: white;
+    font-family: $font;
+    font-size:20px;
+    transition: all 0.2s ease;
+    
+    
+    &:hover{
+        color:rgb(95, 161, 223);
+    }
+  }
+
+  .middle-links{
+      .nav-link{
+          margin: 48px;
+      }
+  }
+
+  .body-elements
+  {
+      max-width: 1200px;
+      margin: auto;
+      min-height: 80vh;
+  }
+
+  footer{
+      background-color: $darkerBackground;
+  }
+
+  .footer-content{
+      max-width: 1200px;
+      margin: auto;
+  }
+
+img{ max-width: 1200px;} 
+
+h2 {
+    font-family: $font;
+    color: white;
+}
+
+
+
+
+
+.hero-section
+{
+    position: relative;
+    margin-bottom: 80px; 
+
+    .hero-child 
+    {
+        position: absolute;
+        left: 48px;
+        bottom: -80px;
+        display: flex;
+        align-items: center;
+        width: 1152px;
+        z-index: 1;
+        
+        
+        
+        .profile-picture
+        {
+            border-radius: 50%;
+            height: 160px;
+            
+        }
+        
+        .hero-child2
+        {
+            font-family: $font;
+            color: white;
+            position: absolute;
+            left: 180px;
+            
+            h1{
+                font-weight: lighter;
+            }
+            .username{
+                font-weight: bold;
+            }
+            
+        }
+        
+        .transparent-border
+        {
+            height: 160px;
+            width: 1072px;
+            position: absolute;
+            background-color: $transparentOverlay;
+            left: 80px;
+            z-index: -1;
+        }
+    }
+}
+
+// .post-list {
+//     display: flex;
+//     overflow-x: scroll;
+//     list-style: none;
+//     padding: 20px;
+// }
+
+
+
+    
+    

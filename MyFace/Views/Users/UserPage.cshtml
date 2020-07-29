@@ -4,12 +4,22 @@
     Layout = "_Layout";
 }
 
-<section id="hero-section">
+<section class="hero-section">
+
     <img src="@Model.CoverImageUrl" alt="Cover Image"/>
-    <img src="@Model.ProfileImageUrl" alt="Profile Image"/>
-    <h1>@Model.DisplayName</h1>
-    <div>@Model.Username</div>
-    <div>@Model.Email</div>
+
+        <div class="hero-child">
+            <div class="transparent-border"></div>
+            
+            <img class=  "profile-picture" src="@Model.ProfileImageUrl" alt="Profile Image"/>
+
+            <div class="hero-child2">
+                <h1>@Model.DisplayName</h1>
+                <div class="username">@Model.Username</div>
+                <div>@Model.Email</div>
+            </div>
+        </div>
+
 </section>
 
 <section id="posts-section">
